@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base href="">
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<script defer src="js/zajednicki.js" type="text/javascript"></script>
+	<script defer src="js/zanrovi.js" type="text/javascript"></script>
+	<title>Žanrovi</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik">
+		<tr><th>Prijavljeni ste kao</th><td><a href="korisnik.html?korisnickoIme=">a</a>.</td></tr>
+		
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="korisnik">
+		<tr><th>Niste prijavljeni</th></tr>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="registracija.html">registracija</a></li>
+					<li><a href="prijava.html">prijava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="zanrovi.html">žanrovi</a></li>
+		<li><a href="filmovi.html">filmovi</a></li>
+		<li><a href="projekcije.html">projekcije</a></li>
+		<li><a href="korisnici.html">korisnici</a></li>
+	</ul>
+	<form method="get">
+		<table class="tabela">
+			<caption>Žanrovi</caption>
+			<tr>
+				<th>r. br.</th>
+				<th>naziv</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th></th>
+				<th><input type="search" value="" name="naziv"/></th>
+				<th><input type="submit" value="Pretraži"/></th>
+			</tr>
+			<tr>
+				<td class="broj">1</td>
+				<td><a href="zanr.html?id=">naučna fantastika</a></td>
+				<td><a href="filmovi.html?zanrId=">filmovi</a></td>
+			</tr>
+		</table>
+	</form>
+	<ul>
+		<li><a href="dodavanjeZanra.html">dodavanje žanra</a></li>
+	</ul>
+</body>
+</html>

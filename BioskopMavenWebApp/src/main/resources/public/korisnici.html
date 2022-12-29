@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base href="">
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<title>Korisnici</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik">
+		<tr><th>Prijavljeni ste kao</th><td><a href="korisnik.html?korisnickoIme=">a</a>.</td></tr>
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="zanrovi.html">žanrovi</a></li>
+		<li><a href="filmovi.html">filmovi</a></li>
+		<li><a href="projekcije.html">projekcije</a></li>
+		<li><a href="korisnici.html">korisnici</a></li>
+	</ul>
+	<form method="get">
+		<table class="tabela">
+			<caption>Korisnici</caption>
+			<tr>
+				<th>r. br.</th>
+				<th>korisničko ime</th>
+				<th>e-mail</th>
+				<th>pol</th>
+				<th>administrator</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th></th>
+				<th><input type="search" name="korisnickoIme"/></th>
+				<th><input type="search" name="eMail"/></th>
+				<th>
+					<select name="pol">
+						<option value="">odaberi</option>
+						<option value="muški">muški</option>
+					</select>
+				</th>
+				<th><input type="checkbox" name="administrator"/></th>
+				<th><input type="submit" value="Pretraži"/></th>
+			</tr>
+			<tr>
+				<td class="broj">1</td>
+				<td><a href="korisnik.html?korisnickoIme=">a</a></td>
+				<td>a@a.com</td>
+				<td>muški</td>
+				<td>da</td>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+	<ul>
+		<li><a href="dodavanjeKorisnika.html">dodavanje korisnika</a></li>
+	</ul>
+</body>
+</html>

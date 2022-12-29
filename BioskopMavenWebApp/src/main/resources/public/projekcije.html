@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base href="">
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<title>Projekcije</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik">
+		<tr><th>Prijavljeni ste kao</th><td><a href="korisnik.html?korisnickoIme=">a</a>.</td></tr>
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="korisnik">
+		<tr><th>Niste prijavljeni</th></tr>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="registracija.html">registracija</a></li>
+					<li><a href="prijava.html">prijava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="zanrovi.html">žanrovi</a></li>
+		<li><a href="filmovi.html">filmovi</a></li>
+		<li><a href="projekcije.html">projekcije</a></li>
+		<li><a href="korisnici.html">korisnici</a></li>
+	</ul>
+	<form method="get">
+		<table class="tabela">
+			<caption>Projekcije</caption>
+			<tr>
+				<th>r. br.</th>
+				<th>datum i vreme</th>
+				<th>film</th>
+				<th>tip</th>
+				<th>sala</th>
+				<th>cena karte</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th></th>
+				<th>
+					od:<input type="date" value="2020-01-01" name="datumOd"/><input type="time" value="08:00" name="vremeOd"/><br/>
+					do:<input type="date" value="2030-01-01" name="datumDo"/><input type="time" value="23:00" name="vremeDo"/>
+				</th>
+				<th>
+					<select name="filmId">
+						<option value="0">odaberi</option>
+						<option value="1">film 1</option>
+						<option value="2">film 2</option>
+						<option value="3">film 3</option>
+					</select>
+				</th>
+				<th>
+					<select name="tip">
+						<option value="">odaberi</option>
+						<option value="2D">2D</option>
+						<option value="3D">3D</option>
+						<option value="4D">4D</option>
+					</select>
+				</th>
+				<th><input type="number" value="1" min="1" name="sala"/></th>
+				<th>
+					od:<input type="number" value="0.0" min="0" step="0.1" name="cenaKarteOd"/><br/>
+					do:<input type="number" value="1000.0" min="0" step="0.1" name="cenaKarteDo"/>
+				</th>
+				<th><input type="submit" value="Pretraži"/></th>
+			</tr>
+			<tr>
+				<td class="broj">1</td>
+				<td><a href="projekcija.html?id=">22.06.2020. 20:00</a></td>
+				<td><a href="film.html?id=">Avengers: Endgame</a></td>
+				<td>2D</td>
+				<td class="broj">1</td>
+				<td class="broj">380.00 rsd</td>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+	<ul>
+		<li><a href="dodavanjeProjekcije.html">dodavanje projekcije</a></li>
+	</ul>
+</body>
+</html>

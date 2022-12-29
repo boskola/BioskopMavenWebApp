@@ -1,0 +1,42 @@
+table.forma {
+	border-collapse: collapse;
+	margin: 5px;
+}
+
+table.forma caption {
+	font-size: 16pt
+}
+
+table.forma th, td {
+	border: 1px solid Gray;
+	padding: 5px;
+}
+
+table.forma th {
+	text-align: right;
+	width: 150px;
+	color: white;
+	background-color: DodgerBlue;
+}
+
+table.forma td {
+	background-color: White;
+	min-width: 250px;
+}
+
+table.forma input, textarea, select {
+	width: 250px;
+	box-sizing: border-box;
+}
+
+table.forma input[type="checkbox"] {
+	width: 20px;
+}
+
+table.forma input[type="radio"] {
+	width: 20px;
+}
+
+p.greska {
+	color: red;
+}

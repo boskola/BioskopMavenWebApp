@@ -1,0 +1,22 @@
+table.korisnik {
+	border-collapse: collapse;
+}
+
+table.korisnik caption {
+	font-size: 16pt
+}
+
+
+table.korisnik caption {
+	font-size: 16pt
+}
+
+table.korisnik th, td {
+	border: 1px solid Gray;
+	padding: 5px;
+}
+
+table.korisnik th {
+	color: white;
+	background-color: DodgerBlue;
+}

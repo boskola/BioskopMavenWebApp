@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base href="">
+	<link rel="stylesheet" type="text/css" href="css/StiloviTabela.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<script defer src="js/zajednicki.js" type="text/javascript"></script>
+	<script defer src="js/filmovi.js" type="text/javascript"></script>
+	<title>Filmovi</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik">
+		<tr><th>Prijavljeni ste kao</th><td><a href="korisnik.html?korisnickoIme=">a</a>.</td></tr>
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="korisnik">
+		<tr><th>Niste prijavljeni</th></tr>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="registracija.html">registracija</a></li>
+					<li><a href="prijava.html">prijava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="zanrovi.html">žanrovi</a></li>
+		<li><a href="filmovi.html">filmovi</a></li>
+		<li><a href="projekcije.html">projekcije</a></li>
+		<li><a href="korisnici.html">korisnici</a></li>
+	</ul>
+	<form method="get">
+		<table class="tabela">
+			<caption>Filmovi</caption>
+			<tr>
+				<th>r. br.</th>
+				<th>naziv</th>
+				<th>žanr</th>
+				<th>trajanje</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th></th>
+				<th><input type="search" value="" name="naziv"/></th>
+				<th>
+					<select name="zanrId">
+						<option value="0">odaberi</option>
+					</select>
+				</th>
+				<th>
+					od:<input type="number" min="0" value="0" name="trajanjeOd"/><br/>
+					do:<input type="number" min="0" value="240" name="trajanjeDo"/>
+				</th>
+				<th><input type="submit" value="Pretraži"/></th>
+			</tr>
+			<tr>
+				<td class="broj"></td>
+				<td><a href="film.html?id=1">Avengers: Endgame</a></td>
+				<td>
+					<ul>
+						<li><a href="zanr.html?id=1">naučna fantastika</a></li>
+					</ul>
+				</td>
+				<td class="broj">182</td>
+				<td>
+					<a href="projekcije.html?filmId=1">projekcije</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<ul>
+		<li><a href="dodavanjeFilma.html">dodavanje filma</a></li>
+	</ul>
+	<table class="horizontalni-meni">
+		<caption>Popularni filmovi</caption>
+		<tr>
+			<td>
+				<ul>
+					<li>
+						<a href="film.html?id=">Avengers: Endgame</a>
+						<progress value="1" max="5"></progress>
+						<span>1</span>
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="horizontalni-meni">
+		<caption>Posećeni filmovi</caption>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="film.html?id=">Avengers: Endgame</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

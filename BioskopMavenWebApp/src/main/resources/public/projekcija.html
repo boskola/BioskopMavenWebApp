@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base href="">
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<title>Projekcija</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik">
+		<tr><th>Prijavljeni ste kao</th><td><a href="korisnik.html?korisnickoIme=">a</a>.</td></tr>
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="korisnik">
+		<tr><th>Niste prijavljeni</th></tr>
+		<tr>
+			<td>
+				<ul>
+					<li><a href="registracija.html">registracija</a></li>
+					<li><a href="prijava.html">prijava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="zanrovi.html">žanrovi</a></li>
+		<li><a href="filmovi.html">filmovi</a></li>
+		<li><a href="projekcije.html">projekcije</a></li>
+		<li><a href="korisnici.html">korisnici</a></li>
+	</ul>
+	<form method="post" action="Projekcije/Edit">
+		<input type="hidden" name="id" value="1">
+		<table class="forma">
+			<caption>Projekcija</caption>
+			<tr>
+				<th>datum i vreme:</th>
+				<td>
+					<input type="date" value="2020-22-06" name="datum"/>&nbsp;
+					<input type="time" value="20:00" name="vreme"/>
+				</td>
+			<tr>
+				<th>film:</th>
+				<td>
+					<select name="filmId">
+						<option value="1" selected>Avengers: Endgame</option>
+					</select>	
+				</td>
+			</tr>
+			<tr>
+				<th>tip:</th>
+				<td>
+					<select name="tip">
+						<option value="2D" selected>2D</option>
+						<option value="3D">3D</option>
+						<option value="4D">4D</option>
+					</select>
+				</td>
+			</tr>
+			<tr><th>sala:</th><td><input type="number" value="1" min="1" name="sala"/></td></tr>
+			<tr><th>cena karte:</th><td><input type="number" value="380.00" min="0" step="0.1" name="cenaKarte"/></td></tr>
+			<tr><th></th><td><input type="submit" value="Izmeni"/></td></tr>
+		</table>
+	</form>
+	<form method="post" action="Projekcije/Delete">
+		<input type="hidden" name="id" value="1">
+		<table class="forma">
+			<tr><th></th><td><input type="submit" value="Obriši"/></td></tr>
+		</table>
+	</form>
+	<p class="greska"></p>
+	<table class="forma">
+		<caption>Projekcija</caption>
+		<tr><th>datum i vreme:</th><td>22.06.2020. 20:00</td></tr>
+		<tr>
+			<th>film:</th><td><a href="film.html?id=">Avengers: Endgame</a></td>
+		</tr>
+		<tr><th>tip:</th><td>2D</td></tr>
+		<tr><th>sala:</th><td>1</td></tr>
+		<tr><th>cena karte:</th><td>380.0</td></tr>
+	</table>
+</body>
+</html>

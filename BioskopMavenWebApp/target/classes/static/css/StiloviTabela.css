@@ -1,0 +1,29 @@
+table.tabela {
+	border-collapse: collapse;
+}
+
+table.tabela caption {
+	font-size: 16pt
+}
+
+table.tabela th, td {
+	border: 1px solid Gray;
+	padding: 5px;
+}
+
+table.tabela td.broj {
+	text-align: right;
+}
+
+table.tabela th {
+	color: white;
+	background-color: DodgerBlue;
+}
+
+table.tabela tr:nth-child(even) {
+	background-color: LightGray;
+}
+
+table.tabela input[type="search"] {
+	width: 100%;
+}

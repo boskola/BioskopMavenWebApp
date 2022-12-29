@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base href="">
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviHorizontalniMeni.css"/>
+	<title>Registracija</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik">
+		<tr><th>Prijavljeni ste kao</th><td><a href="korisnik.html?korisnickoIme=">a</a>.</td></tr>
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="zanrovi.html">žanrovi</a></li>
+		<li><a href="filmovi.html">filmovi</a></li>
+		<li><a href="projekcije.html">projekcije</a></li>
+		<li><a href="korisnici.html">korisnici</a></li>
+	</ul>
+	<form method="post" action="Korisnici/Create">
+		<table class="forma">
+			<caption>Dodavanje korisnika</caption>
+			<tr><th>korisničko ime:</th><td><input type="text" name="korisnickoIme"/></td></tr>
+			<tr><th>lozinka:</th><td><input type="password" name="lozinka"/></td></tr>
+			<tr><th>e-mail:</th><td><input type="text" name="eMail"/></td></tr>
+			<tr>
+				<th>pol:</th>
+				<td>
+					<input type="radio" name="pol" value="muški" checked/><span>muški</span>&nbsp;
+					<input type="radio" name="pol" value="ženski"/><span>ženski</span>
+				</td>
+			</tr>
+			<tr><th>administrator:</th><td><input type="checkbox" name="administrator"/></td></tr>
+			<tr><th></th><td><input type="submit" value="Dodaj"/></td></tr>
+		</table>
+	</form>
+	<p class="greska"></p>
+	<ul>
+		<li><a href="korisnici.html">povratak</a></li>
+	</ul>
+</body>
+</html>

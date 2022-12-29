@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base href="">
+	<link rel="stylesheet" type="text/css" href="css/StiloviForma.css"/>
+	<link rel="stylesheet" type="text/css" href="css/StiloviKorisnik.css"/>
+	<script defer src="js/zajednicki.js" type="text/javascript"></script>
+	<script defer src="js/dodavanjeZanra.js" type="text/javascript"></script>
+	<title>Dodavanje žanra</title>
+</head>
+<body>
+	<h2>Bioskop</h2>
+	<ul>
+		<li><a href="">početna</a></li>
+	</ul>
+	<table class="korisnik">
+		<tr><th>Prijavljeni ste kao</th><td><a href="korisnik.html?korisnickoIme=">a</a>.</td></tr>
+		<tr>
+			<td colspan="2">
+				<ul>
+					<li><a href="Korisnici/Logout">odjava</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li><a href="zanrovi.html">žanrovi</a></li>
+		<li><a href="filmovi.html">filmovi</a></li>
+		<li><a href="projekcije.html">projekcije</a></li>
+		<li><a href="korisnici.html">korisnici</a></li>
+	</ul>
+	<form method="post" action="Zanrovi/Create">
+		<table class="forma">
+			<caption>Dodavanje žanra</caption>
+			<tr><th>naziv:</th><td><input type="text" name="naziv"/></td></tr>
+			<tr><th></th><td><input type="submit" value="Dodaj"/></td></tr>
+		</table>
+	</form>
+	<p class="greska"></p>
+	<ul>
+		<li><a href="zanrovi.html">povratak</a></li>
+	</ul>
+</body>
+</html>
